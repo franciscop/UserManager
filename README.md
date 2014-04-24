@@ -4,6 +4,7 @@ User Manager
 This project was created to get a secure, integrated and extensible PHP library for handling the users. It manages the users so you can focus on building your web page.
 
 Table of contents
+
 1. Requisites
 2. Installation
 3. Using it
