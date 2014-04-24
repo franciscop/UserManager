@@ -1,0 +1,340 @@
+/*
+ * Style of the User Manager
+ * Everything is inside #userForms, so there'll be no interference with the page
+ * The line after the comment saying "Don't touch" should be left as-is. They might make the structure of the window stand still or small hacks
+ * This is the organization of the stylesheet:
+ * 1. Eric Meyer's Reset stripped down
+ * 2. Main window
+ * 3. Navigation buttons
+ * 4. General classes
+ * 5. Footer
+ * 6. Rules for each form (login, register, profile, etc)
+ * 
+ */
+
+
+/**
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+#userForms span, #userForms h2, #userForms h3, #userForms p, #userForms a,
+#userForms img, #userForms ol, #userForms ul, #userForms li, #userForms form,
+#userForms label, #userForms tr, #userForms footer, #userForms header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: auto;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+
+ol, ul {
+  list-style: none;
+  }
+
+
+
+
+/* When you hover over a button, show a hand. For example, the main <button class = "LoginButton">Log in</button> */
+button:hover {
+  cursor: pointer;
+  }
+
+/* Define the main window */
+#userForms {
+  /* Believe it or not, 'margin' here is for setting the position.
+     We made it this way because most of the pages are centered.
+     This value is the Y position from the top of your page to the top of the popup */
+  margin-top: 80px;
+  
+  /* This value sets the X position from the CENTER of your page to the left side of the popup */
+  margin-left: 180px;
+  
+  /* Define the typography of the whole page */
+  font-family: verdana, sans-serif;
+  
+  /* Main width. Everything else is relative to this. */
+  width: 250px;
+  
+  /* Background of the main window. */
+  background-color: white;
+  
+  /* Color of the text */
+  color: #333;
+  
+  /* The radius of the outmost border */
+  border-radius: 10px;
+  
+  /* The shadow of the pop-up window */
+  box-shadow: 0 0 10px 2px #888;
+  
+  /* Don't touch */
+  display: none; position: absolute; overflow: hidden; padding: 0px; left: 50%; z-index: 100;
+  }
+
+/* Buttons on the right (close, info) */
+#userForms nav {
+  /* Distance from the right margin to the right of the X */
+  right: 8px;
+  
+  /* Distance from the top margin to the top of the ? and X */
+  top: 5px;
+  
+  /* Make the letters stand out (bold) */
+  font-weight: bold;
+  
+  /* Don't touch */
+  position: absolute; z-index: 101;
+  }
+
+/* This is each of ?, X */
+#userForms nav a {
+  /* Delete the underscore */
+  text-decoration: none;
+  
+  /* Default color when mouse is NOT over it */
+  color: #888;
+  
+  /* Don't touch */
+  padding: 3px; float: left;
+  }
+
+#userForms nav a:hover {
+  /* Default color when mouse IS over it */
+  color: #000;
+  
+  /* Don't touch */
+  cursor: pointer;
+  }
+
+/* The forms inside the main window are hidden, so only one will be shown by javascript */
+#userForms > div {
+  /* Don't touch */
+  display: none;
+  }
+
+/* Every form inside the div inside the main window */
+#userForms form {
+  /* Assures that the buttons at the bottom are _really_ at the bottom */
+  margin-bottom: 0;
+  }
+
+#userForms p {
+  margin: 5%;
+  width: calc(100% - 24px);
+  }
+
+#userForms h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0px 10px 10px;
+  }
+
+#userForms h2:hover,
+.LoginButton:hover,
+.ProfileButton {
+  cursor: pointer;
+  }
+
+#userForms label,
+#userForms input,
+#userForms select {
+  display: inline;
+  }
+
+/* Make the input fields a bit more pretty */
+#userForms input,
+#userForms .select {
+  border: 1px solid #CCC;
+  margin: 5px 0;
+  padding: 3px;
+  border-radius: 2px;
+  width: 96%;
+  width: calc(100% - 10px);
+  }
+
+/* The padding doesn't add up space in the select ( http://stackoverflow.com/q/3020485 ).
+   Used this solution as calc() support is better than box-sizing */
+#userForms .select {
+  position: relative;
+  width: calc(100% - 4px);
+  height: 20px;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  }
+
+#userForms .select select:hover {
+  cursor: pointer;
+  }
+
+#userForms .select:before {
+  content: "▼";
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* Total height = 20 = 10 + 2x5 */
+  font-size: 10px;
+  line-height: 20px;
+  width: 8px;
+  padding: 0px 6px;
+  pointer-events:none;
+  background-color: white;
+  border-radius: 2px;
+  }
+
+#userForms .select select {
+  border: 0;
+  background-color: white;
+  display: block;
+  width: 100%;
+  height: 20px;
+  }
+
+#userForms select::before {
+  content: "+";
+  display: block;
+  background-color: red;
+  z-index: 100000;
+  }
+
+/* Footer. Style for the buttons that are at the bottom */
+#userForms footer {
+  display: block;
+  width: 100%;
+  margin: 10px 0 0 0;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	
+	float: left;
+	
+	/* Clear problem for float divs http://www.quirksmode.org/css/clearing.html */
+	overflow: auto;
+	width: 100%;
+  }
+
+#userForms footer button {
+  width: 50%;
+  border: 0;
+  margin: 0 0 0px 0;
+  float: left;
+  white-space:nowrap;
+  padding: 10px;
+  background-color: transparent;
+  text-decoration: none;
+  color: #444;
+	box-shadow: inset 0 0 1px grey;
+  }
+
+#userForms footer button:hover {
+  z-index: 101;
+  cursor: pointer;
+  color: #000;
+  background-color: #EEE;
+	box-shadow: 0 0 5px grey;
+  }
+
+#userForms footer button.confirm:hover {
+  background-color: #AFA;
+  }
+
+#userForms footer button.cancel:hover {
+  background-color: #FAA;
+  }
+
+
+
+
+
+
+
+
+/* LOGIN */
+#userForms .login .services {
+  width: 100%;
+  padding-bottom: 5px;
+  overflow: hidden;
+  }
+
+#userForms .login .services img {
+  width: 22%;
+  height: 22%;
+  padding: 0px;
+  float: left;
+	border-radius: 3px;
+  margin: 2% 0px 0px 2%;
+  }
+
+#userForms .login .ForgotButton {
+  float: right;
+  margin-right: 5px;
+  }
+
+#userForms .login .ForgotButton:hover {
+  cursor: pointer;
+  }
+
+/* Select the 1st, 5th, etc, as the rows have 4 icons each */
+#userForms .login .services img:nth-child(4n+1) {
+  margin-left: 3%;
+  }
+
+#userForms .login .services img:hover {
+  cursor: pointer;
+	filter:alpha(opacity=80);
+	opacity:0.8;
+  }
+
+/* The line around "OR" */
+#userForms .line {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  }
+
+#userForms .line span {
+  display: inline-block;
+  position: relative;
+  top: 9px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  background: #fff;
+  padding: 0 12px;
+  }
+
+
+
+/* REGISTER */
+#userForms .register #TOCAgree,
+#userForms label {
+  display: inline;
+  }
+
+#userForms .register input[type=submit] {
+  margin-bottom: 0;
+  }
+
+#userForms .register input[type=checkbox],
+#userForms .register input[type=radiobutton] {
+  width: auto;
+  }
+
+#userForms .register small {
+  color: #AAA;
+  font-size: 1em;
+  }
+
+#userForms .register p:first-child {
+  margin-top: 0;
+  }
+
+
+
+/* PROFILE */
+#userForms .profile footer button {
+  /* With only 33.33%, you can _actually_ see the border in the topright */
+  width: 33.33333333%;
+  }

@@ -1,0 +1,16 @@
+[04-Oct-2013 19:51:31 America/Denver] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home5/nkodersc/public_html/spew/UserManager/services/twitter/ajax.php on line 13
+[04-Oct-2013 19:51:31 America/Denver] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home5/nkodersc/public_html/spew/UserManager/services/twitter/ajax.php on line 13
+[04-Oct-2013 19:51:34 America/Denver] PHP Notice:  Use of undefined constant HTTP_HOST - assumed 'HTTP_HOST' in /home5/nkodersc/public_html/spew/UserManager/services/twitter/ajax.php on line 13
+[04-Oct-2013 19:51:34 America/Denver] PHP Notice:  Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' in /home5/nkodersc/public_html/spew/UserManager/services/twitter/ajax.php on line 13
+[09-Oct-2013 14:26:51 America/Denver] PHP Notice:  Undefined variable: UMConfig in /home5/nkodersc/public_html/spew/UserManager/services/twitter/verify.php on line 3
+[09-Oct-2013 14:26:51 America/Denver] PHP Notice:  Trying to get property of non-object in /home5/nkodersc/public_html/spew/UserManager/services/twitter/verify.php on line 3
+[09-Oct-2013 14:26:51 America/Denver] PHP Fatal error:  require(): Failed opening required '/services/twitter/oauth/twitteroauth.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home5/nkodersc/public_html/spew/UserManager/services/twitter/verify.php on line 3
+[09-Oct-2013 14:56:52 America/Denver] PHP Notice:  Undefined variable: UMConfig in /home5/nkodersc/public_html/spew/UserManager/services/twitter/cookie.php on line 6
+[09-Oct-2013 14:56:52 America/Denver] PHP Notice:  Trying to get property of non-object in /home5/nkodersc/public_html/spew/UserManager/services/twitter/cookie.php on line 6
+[09-Oct-2013 14:56:52 America/Denver] PHP Fatal error:  require(): Failed opening required '/services/facebook/sdk/base_facebook.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home5/nkodersc/public_html/spew/UserManager/services/twitter/cookie.php on line 6
+[12-Oct-2013 17:38:24 America/Denver] PHP Notice:  Undefined variable: UMConfig in /home5/nkodersc/public_html/spew/UserManager/services/twitter/cookie.php on line 6
+[12-Oct-2013 17:38:24 America/Denver] PHP Notice:  Trying to get property of non-object in /home5/nkodersc/public_html/spew/UserManager/services/twitter/cookie.php on line 6
+[12-Oct-2013 17:38:24 America/Denver] PHP Fatal error:  require(): Failed opening required '/services/facebook/sdk/base_facebook.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home5/nkodersc/public_html/spew/UserManager/services/twitter/cookie.php on line 6
+[12-Oct-2013 18:03:54 America/Denver] PHP Notice:  Undefined variable: UMConfig in /home5/nkodersc/public_html/spew/UserManager/services/twitter/verify.php on line 3
+[12-Oct-2013 18:03:54 America/Denver] PHP Notice:  Trying to get property of non-object in /home5/nkodersc/public_html/spew/UserManager/services/twitter/verify.php on line 3
+[12-Oct-2013 18:03:54 America/Denver] PHP Fatal error:  require(): Failed opening required '/services/twitter/oauth/twitteroauth.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home5/nkodersc/public_html/spew/UserManager/services/twitter/verify.php on line 3

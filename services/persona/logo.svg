@@ -1,0 +1,31 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs>
+<linearGradient id="linearGradient3765" y2="31.5" gradientUnits="userSpaceOnUse" x2="32.4" y1="12.4" x1="32.5">
+<stop stop-color="#505351" offset="0"/>
+<stop stop-color="#231c18" offset="1"/>
+</linearGradient>
+<radialGradient id="radialGradient3791" gradientUnits="userSpaceOnUse" cx="32.2" cy="28.3" r="16.9" gradientTransform="matrix(1.208,-0.016,0.01496579,1.129917,-7.2236468,-3.3639512)">
+<stop stop-color="#505351" offset="0"/>
+<stop stop-color="#231c18" offset="1"/>
+</radialGradient>
+<linearGradient id="linearGradient3816" y2="-0.125" gradientUnits="userSpaceOnUse" x2="32.1" y1="64" x1="32.6">
+<stop stop-color="#b73b23" offset="0"/>
+<stop stop-color="#f69c28" offset="1"/>
+</linearGradient>
+</defs>
+<path fill="url(#linearGradient3765)" d="m32.5,33.7z"/>
+<rect rx="0" ry="0" height="64" width="64" y="0.000872" x="0.00217" fill="url(#linearGradient3816)"/>
+<path stroke-linejoin="round" d="m25,20.8c-2.15,0.0143-1.5,4.2,0.25,3.97,1.75-0.234,1.9-3.98-0.25-3.97z" stroke="#393636" stroke-linecap="butt" stroke-width="1px" fill="#393636"/>
+<path stroke-linejoin="round" d="m39.7,21c2.15,0.0143,1.5,4.2-0.25,3.97-1.75-0.234-1.9-3.98,0.25-3.97z" stroke="#393636" stroke-linecap="butt" stroke-width="1px" fill="#393636"/>
+<path d="m32.5,10.8c-10.2,0.024-11.1,15-4.07,20.6,0.077,1.57,0.0678,2.17,0,3.66-11.5,1.14-12,6.49-12.9,14,13.8,1.1,21.9,1.17,33.9,0.0678-0.557-7.33-1.54-13-13-14,0.0271-2.1,0.0782-2.08,0.0726-3.84,7.12-5.7,6.2-20.5-3.99-20.5z" fill="url(#radialGradient3791)"/>
+</svg>
