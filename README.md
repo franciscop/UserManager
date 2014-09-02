@@ -1,7 +1,7 @@
 User Manager
 ============
 
-Status: unsupported. You are free to push requests or fork the project, but I will not keep writing code myself in the near future.
+**Status: unsupported**. You are free to push requests or fork the project, but I will not keep writing code myself in the near future.
 
 This project was created to get a secure, integrated and extensible PHP library for handling the users. It manages the users so you can focus on building your web page.
 
